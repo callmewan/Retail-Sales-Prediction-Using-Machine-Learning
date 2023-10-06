@@ -1,0 +1,87 @@
+# Sales Prediction Report
+
+## Introduction
+
+In this project, we aimed to predict weekly sales for a retail store using data-driven approaches and machine learning algorithms. Accurate sales prediction is crucial for improving various aspects of the retail business, such as inventory management, marketing strategies, and overall performance.
+
+## Data
+
+We utilized a dataset containing historical sales data along with relevant features:
+
+- Store: Store identifier.
+- Date: Date of the recorded sales data.
+- Weekly_Sales: The target variable, representing the weekly sales in dollars.
+- Holiday_Flag: A binary flag indicating whether a holiday week (1) or a non-holiday week (0).
+- Temperature: The average temperature during the week.
+- Fuel_Price: The fuel price during the week.
+- CPI (Consumer Price Index): An indicator of inflation or deflation.
+- Unemployment: The unemployment rate during the week.
+
+## Methodology
+
+### Data Preprocessing
+
+- Data cleaning and handling missing values.
+- Feature engineering to create relevant features such as lagged sales and seasonality.
+
+### Exploratory Data Analysis (EDA)
+
+- Analyzed data distribution, correlations, and trends.
+- Identified insights that guided our modeling approach.
+
+### Model Selection
+
+1. **Linear Regression**
+   - Chosen as a simple baseline model.
+   - Limited performance due to linear assumptions.
+
+2. **Random Forest**
+   - Employed for better capturing complex relationships in the data.
+   - Achieved superior predictive performance.
+
+### Model Evaluation
+
+- Split data into training and testing sets.
+- Calculated accuracy metrics including MAE, MSE, RMSE, and R-squared for both models.
+- Visualized actual vs. predicted sales.
+
+## Results
+
+### Linear Regression
+
+- MAE: 430,774.13
+- MSE: 297,831,458,609.28
+- RMSE: 545,397.69
+- R-squared (R2) Score: 0.02
+
+### Random Forest
+
+- MAE: 285,842.65
+- MSE: 172,342,434,703.17
+- RMSE: 415,080.72
+- R-squared (R2) Score: 0.53
+
+## Conclusion
+
+- The Random Forest model significantly outperformed the Linear Regression model in sales prediction accuracy.
+- The R2 score of 0.53 for the Random Forest model suggests that it explains approximately 53% of the variance in sales.
+- Further model refinement and feature engineering could potentially enhance predictive performance.
+
+## Next Steps
+
+- Continuously monitor and maintain the model's performance.
+- Consider hyperparameter tuning and additional feature engineering.
+- Implement the model in a production environment for real-time or batch sales forecasting.
+
+## Acknowledgments
+
+- We acknowledge the dataset source and any other relevant sources used in this project.
+
+---
+
+This report provides an overview of our sales prediction project. For detailed code and implementation, please refer to the Jupyter Notebook or script in the project's GitHub repository.
+
+**GitHub Repository Link:** [Insert Your GitHub Repository Link Here]
+
+For any inquiries or feedback, please contact me at syazwanbunander1997@gmail.com
+
